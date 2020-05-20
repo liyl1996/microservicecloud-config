@@ -1,0 +1,18 @@
+1.	cd ~/
+2.	ls -A
+3.	看是否有 .ssh/ 这个目录
+3.1	有rm -r .ssh 
+3.1	ls -A
+3.2	ssh-keygen -t rsa -C 账户名
+4.	3次确定
+5.	cd ~/.ssh/
+6.	ll
+7.	cat id_rsa.pub
+8.	复制ssh-rsa
+9.	在GitHub上添加ssh密钥
+10.	在你的git项目下打开git bash here
+11.	git remote add origin_ssh   GitHub项目的ssh地址
+12.	git add ssh.txt
+13.	git commit -m "test ssh" ssh.txt
+14.	git push origin_ssh master
+15.	yes
